@@ -1,0 +1,14 @@
+# A person's salary is one penny the first day, two pennies the
+# second day, and continues to double each day.
+
+# How many days until desired amount
+pennies = 1
+dollars = 0
+day = 0
+desired_amount = float(input("What is the desired amount you would like to make? "))
+while dollars < desired_amount:
+    dollars = pennies / 100
+    print(f"On day {day}\t You have ${dollars}")
+    pennies = pennies * 2
+    day += 1
+print( f"It took {day} days to make ${desired_amount}.")
