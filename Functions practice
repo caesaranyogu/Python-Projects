@@ -1,0 +1,67 @@
+# Write a function named computer() that prints your name.
+
+def computer():
+    print(input(" What is your name? "))
+
+computer()
+
+# Write a function named times_ten() the function should accept an
+# argument from a user and display the product of its argument multiplied
+# times 10.
+
+def times_ten(num):
+    product = num*10
+    print(f"{num} times 10 is {product}")
+
+times_ten(8)
+
+# Write a function named welcome() that asks the user to enter his or her
+# name and displays it followed by a welcome message.
+
+def welcome():
+    name = input("What is your name? ")
+    print(f"Welcome, {name}")
+
+welcome()
+
+# Write a function named get_first_name() that asks the user to enter his or
+# her first name and their last name on two separate lines. Then print last
+# name first, and first name last.
+
+def get_first_name():
+    first_name = input("Please enter your first name: ")
+    last_name = input("Please enter your last name: ")
+    print(f"{last_name}, {first_name}")
+
+get_first_name()
+
+# Write a function named area() that get a rectangle’s length and a wide from
+# a user. Then calculate the area based on the two inputs.
+
+def area(length, width):
+    area = length*width
+    print(f"The area of your rectangle is {area}")
+
+area(10,8)
+
+# Write a program that asks the user to enter 5 test scores. the program
+# should display a letter grade for each score and the average test score.
+# Write the following functions in the program:
+
+# calc_average – function should accept 5 scores and arguments an
+# return the average of the scores
+#
+# determine_grade – function should accept a test score as an
+# argument and return a letter grade for the score based on the
+# following grading scale:
+# 90-100A
+# 80-89B
+# 70-79C
+# 60-69D
+# Below 60F
+
+def calc_average(score1, score2, score3, score4, score5):
+    average = (score1 + score2 + score3 +score4 +score5)/5
+    print(f"Your average is {average}.")
+
+calc_average(95,92,87,91,97)
