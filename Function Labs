@@ -1,0 +1,41 @@
+# 1.Kilometer Converter
+# Write a program that asks the user to enter a distance in kilometers, and then
+# convert that distance to miles. The conversion formula is as follows:
+# Miles = Kilometers * 0.6214
+
+def kilo_converter():
+    kilo_distance = float(input("Please enter the distance in kilometers: "))
+    miles  = kilo_distance* .6214
+    print(f"{kilo_distance} in miles is {miles:.2f}")
+
+kilo_converter()
+
+# 2.How Much Insurance?
+# Many financial experts advise that property owners should insure their homes or
+# buildings for at least 80 percent of the amount it would cost to replace the
+# structure. Write a program that asks the user to enter the replacement cost of a
+# building and then displays the minimum amount of insurance he or she should
+# buy for the property.
+
+def insurance_min():
+    cost = float(input(" Please enter the replacement cost of the building: "))
+    insurance = cost * .8
+    print(f"The minimum amount or insurance for this property should be {insurance:.2f}")
+
+insurance_min()
+
+# 3. Stadium Seating
+# There are three seating categories at a stadium. For a softball game, Class A seats
+# cost $20, Class B seats cost $15, and Class C seats cost $10. Write a program that
+# asks how many tickets for each class of seats were sold, and then displays the
+# amount of income generated from each class of ticket and total ticket sales
+
+def ticket_income():
+    classA = int(input("How many Class A tickets were sold? ")) * 20
+    classB = int(input("How many Class B tickets were sold? ")) * 15
+    classC = int(input("How many Class C tickets were sold? ")) * 10
+    revenue = classA + classB + classC
+    print(f"Class A sales: ${classA:.2f} ; Class B sales: ${classB:.2f} ; 8Class C sales: ${classC:.2f}")
+    print(f"The total income generated from total tickets is ${revenue:.2f}")
+
+ticket_income()
