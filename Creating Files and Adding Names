@@ -1,0 +1,10 @@
+def make_name_list():
+    with open("test.txt", "a") as create_file:
+        name = input("What name would you like to add? ")
+        create_file.write(f"{name}\n")
+        print(f"New name {name} has been successfully added.")
+
+x = "y"
+while x == "y":
+    make_name_list()
+    x = input("Continue y/n: ")
