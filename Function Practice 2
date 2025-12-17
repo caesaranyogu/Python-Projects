@@ -1,0 +1,15 @@
+# There are three price categories for a gaming app. For the game,
+# the standard price is $19.99, the premium price is $24.99, and the elite price is $49.88.
+# Write a program that asks how many games for each category were sold.
+# Then display the amount of income generated from the total sale of all games sole.
+# USE the following variable names:
+
+def game_revenue():
+    standard_rev = float(input("How many copies were sold at standard price? ")) * 19.99
+    premium_rev = float(input("How many copies were sold at premium price? ")) * 24.99
+    elite_rev = float(input("How many copies were sold at elite price? ")) * 49.88
+    total_rev = standard_rev + premium_rev + elite_rev
+    print(f"Standard Revenue: ${standard_rev:.2f} \nPremium Revenue: ${premium_rev:.2f}\nElite Revenue: ${elite_rev:.2f}")
+    print(f"Total revenue: ${total_rev:.2f}")
+
+game_revenue()
